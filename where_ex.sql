@@ -49,4 +49,4 @@ SELECT first_name, last_name, birth_date, hire_date from employees where hire_da
 
 -- Find all employees with a 'q' in their last name but not 'qu' — 547 rows.
 
-SELECT first_name, last_name from employees where last_name like 'Q%' and last_name not LIKE 'qu%';
+SELECT first_name, last_name from employees where last_name like '%Q%' and last_name not LIKE '%qu%';
