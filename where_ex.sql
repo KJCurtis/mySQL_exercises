@@ -44,7 +44,7 @@ select first_name , last_name from employees where last_name like 'e%'
 
 -- Find all employees hired in the 90s and born on Christmas — 362 rows.
 
-SELECT first_name, last_name, birth_date, hire_date from employees where hire_date like '199%'
+SELECT first_name, last_namdde, birth_date, hire_date from employees where hire_date like '199%'
                                                                          and birth_date like '%12-24';
 
 -- Find all employees with a 'q' in their last name but not 'qu' — 547 rows.
