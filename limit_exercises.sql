@@ -12,3 +12,15 @@ where hire_date like "199%"
 and birth_date like "%12-25"
 limit 5
 offset 45;
+
+
+select concat(
+    select first_name
+    from employees
+    where emp_no 10001,
+    ' ',
+    select first_name
+    from employees
+    where emp_no 10024
+
+);
